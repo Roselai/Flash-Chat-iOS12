@@ -18,8 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        //TODO: Initialise and Configure your Firebase here:
         FirebaseApp.configure()
+        var ref: DatabaseReference!
+        
+        ref = Database.database().reference()
+        let myDatabase = ref
+        myDatabase!.setValue("We've got data")
+        
+        
         
         return true
     }
