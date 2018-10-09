@@ -148,9 +148,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-
-    
-    
     
     @IBAction func logOutPressed(_ sender: AnyObject) {
         
